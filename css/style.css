@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main_bg_color{
+    background-color: #F5F5F5;
+}
+.main-color {
+    color: #4E4E4E;
+}
+.title-font{
+    font-size: 3rem;
+}
+.w-90 {width: 90%;}
+.w-85 {width: 85%;}
+.about-text h2::after, .form-title h3::after, .media h3::after{
+    content: "";
+    position: absolute;
+    top: 45px;
+    width: 20%;
+    height: 3px;
+    background-color: #0078FF;
+    display: block;
+}
+.servcies h2::after, .portfolio .title h2::after, .blog-title h2::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    top: 100px;
+    width: 45px;
+    height: 5px;
+    background-color: #0078FF;
+    display: block;
+}
+/* ------------------------------------------------------------------navbar----------------------------------------------------------- */
+.navbar{
+    background-color: rgba(0, 0, 0, 0.9)
+}
+.nav-link::before {
+    content: "";
+    position: absolute;
+    top: 90%;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: 0.5s;
+}
+.nav-link:hover::before {
+    width: 65%;
+}
+.active::before{
+    width: 65%;
+}
+/***************************************************************--home section--**************************************************************/
+.header-content {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.home-content h1 {
+    font-size: 72px;
+}
+@media screen and (max-width:768px) {
+    .home-content h1 {
+        font-size: 50px;
+    }
+}
+.home-content p::after {
+    content: "";
+    animation: shifting 12s infinite linear;
+}
+@keyframes shifting {
+    0% {content: "D|";}
+    1.5% {content: "De|";}
+    3% {content: "Des|";}
+    4.5% {content: "Desi|";}
+    6% {content: "Desig|";}
+    7.5% {content: "Design|";}
+    9% {content: "Designe|";}
+    10.5% {content: "Designer|";}
+    12% {content: "Designe|";}
+    13.5% {content: "Design|";}
+    15% {content: "Desig|";}
+    16.5% {content: "Desi|";}
+    18% {content: "Des|";}
+    19.5% {content: "De|";}
+    21% {content: "Dev|";}
+    22.5% {content: "Deve|";}
+    24% {content: "Devel|";}
+    25.5% {content: "Develo|";}
+    27% {content: "Develop|";}
+    28.5% {content: "Develope|";}
+    30% {content: "Developer|";}
+    31.5% {content: "Develope|";}
+    33% {content: "Develop|";}
+    34.5% {content: "Develo|";}
+    36% {content: "Devel|";}
+    37.5% {content: "Deve|";}
+    39% {content: "Dev|";}
+    40.5% {content: "De|";}
+    42% {content: "D|";}
+    42.5% {content: "|";}
+    43.5% {content: "F|";}
+    45% {content: "Fr|";}
+    46.5% {content: "Fre|";}
+    48% {content: "Free|";}
+    49.5% {content: "Freel|";}
+    51% {content: "Freela|";}
+    52.5% {content: "Freelan|";}
+    54% {content: "Freelanc|";}
+    55.5% {content: "Freelance|";}
+    57% {content: "Freelancer|";}
+    58.5% {content: "Freelance|";}
+    60% {content: "Freelanc|";}
+    61.5% {content: "Freelan|";}
+    63% {content: "Freela|";}
+    64.5% {content: "Freel|";}
+    66% {content: "Free|";}
+    67.5% {content: "Fre|";}
+    69% {content: "Fr|";}
+    70.5% {content: "F|";}
+    71% {content: "|";}
+    72% {content: "P|";}
+    73.5% {content: "Ph|";}
+    75% {content: "Pho|";}
+    76.5% {content: "Phot|";}
+    78% {content: "Photo|";}
+    79.5% {content: "Photog|";}
+    81% {content: "Photogr|";}
+    82.5% {content: "Photogra|";}
+    84% {content: "Photograp|";}
+    85.5% {content: "Photograph|";}
+    87% {content: "Photographe|";}
+    88.5% {content: "Photographer|";}
+    90% {content: "Photographe|";}
+    91% {content: "Photograph|";}
+    92% {content: "Photograp|";}
+    93% {content: "Photogra|";}
+    94% {content: "Photogr|";}
+    95% {content: "Photog|";}
+    96% {content: "Photo|";}
+    97% {content: "Phot|";}
+    98% {content: "Pho|";}
+    99% {content: "Ph|";}
+    100% {content: "P|";}
+}
+/* -------------------------------------------------up arrow---------------------------- */
+.up-arrow{
+    background-color: #0078FF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 20px;
+    top: 91%;
+    transition: 0.6s;
+}
+.up-arrow:hover{
+    background-color: #2587f6;
+}
+/*------------------------------------------------------------- about section-------------------------------------------- */
+@media screen and (max-width: 570px) {
+    .about-content-img, .about-content-info{
+        padding-top: 30px;
+    } 
+    .padding{
+        padding: 0 10px;
+    }
+}
+/*----------------------------------------------------------- servcies section------------------------------------------------------------ */
+.services-icons{
+    width: 115px;
+    height: 90px;
+    border-radius: 50%;
+    border: 10px solid rgb(0, 120, 255);
+    transition: 0.5s;
+}
+.servcies-card:hover .services-icons{
+    border: 10px solid #CDE1F8;
+    background-color: #0078FF;
+    color: white;
+}
+/* --------------------------------------------------------------details ---------------------------------------------------------*/
+.details{
+    padding: 8% 0;
+    background-image: linear-gradient(rgba(0, 120, 255, 0.7) , rgba(0, 120, 255, 0.7) ) , url(../img/post-3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.details-icons {
+    width: 80px;
+    height: 80px;
+    border: 9px solid #CDE1F8;
+} 
+/* -------------------------------------------------------------portfolio------------------------------------------------------------------ */
+.card img{
+    cursor: pointer;
+    transition: 0.6s;
+}
+.card:hover .scale{
+    transform: scale(1.3);
+}
+.card-text span, .card-icon{
+    color: #0078FF;
+}
+.card-icon{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border: 3px solid #0078FF;
+    border-radius: 50%;
+}
+.card-textp2{
+    font-size: 0.79rem;
+}
+/* ---------------------------------------------------------------testimonial--------------------------------------------------------- */
+.testimonial{
+    padding: 10% 0;
+    background-image:linear-gradient(rgba(0, 120, 255, 0.7) , rgba(0, 120, 255, 0.7) ), url(../img/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.carousel-indicators[data-bs-target]{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+/* ----------------------------------------------------------------Blog------------------------------------------------------ */
+.blog{
+    background-color: #F8F9FA;
+}
+.blog-img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+.blog .card-body .card-title{
+    transition: 0.5s;
+}
+.blog .card-body .card-title:hover{
+    cursor: pointer;
+    color: #0078FF;
+}
+.blog .card .button{
+    padding: 7px 15px;
+    background-color: #0078FF;
+    transform: translate(-50% , -50%);
+}
+.blog .card .button h6{
+    font-size: 13px;
+}
+.card-end{
+    background-color: #F8F8F8;
+   border-radius: 0 0 5px 5px;
+}
+/* -------------------------------------------------------------contact ------------------------------------------*/
+.contact{
+    padding-top: 10%;
+    background-image:linear-gradient(rgba(0, 120, 255, 0.7) , rgba(0, 120, 255, 0.7) ), url(../img/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.form-btn a{
+    background-color: #0078FF;
+    transition: 0.5s;
+}
+form .form-btn a:hover{
+    border: 5px solid #CDE1F8;
+    background-color: #3393FF;
+}
+.getintouch-icons i{
+    color: #0078FF;
+}
+.contact-icons .media-icons {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #0078FF;
+}
+.contact-icons .media-icons {
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact-icons .media-icons:hover {
+    background-color: #0078FF;
+    color: white;
+    border: 5px solid #CDE1F8;
+}
+/* -----------------------------------------------------------------footer */
+footer{
+    background-color: #0062D3;
+}
